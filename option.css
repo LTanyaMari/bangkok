@@ -1,0 +1,227 @@
+/* Option..css stylesheet for home page*/
+* {
+    box-sizing: border-box;
+}
+
+/*Font selection for paragraph text in the content sections*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai&display=swap');
+
+body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+}
+
+/* Center website and text */
+.main {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.main a[target] {
+
+    color: black;
+    text-decoration: none;
+}
+
+.css options {
+    max-width: 1000px;
+    margin: auto;
+    text-align: left;
+}
+
+/*CSS Options bullets tags*/
+.css p {
+
+    font-size: 16px;
+}
+
+.css a[target] {
+
+    color: blue;
+    text-decoration: none;
+    font-style: italic
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+p {
+    @font-family: IBM + Plex + Sans + Thai;
+    font-size: 18px;
+}
+
+/*p {
+        column-count: 2;
+    }*/
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/*Overlay section*/
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(111, 144, 233, 0.65);
+}
+
+.overlay1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(239, 59, 105, 0.65);
+}
+
+.overlay2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(235, 110, 39, 0.65);
+}
+
+.overlay3 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(34, 176, 132, 0.65);
+}
+
+.overlay4 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(144, 79, 215, 0.65);
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.container:hover .overlay1 {
+    opacity: 1;
+}
+
+.container:hover .overlay2 {
+    opacity: 1;
+}
+
+.container:hover .overlay3 {
+    opacity: 1;
+}
+
+.container:hover .overlay4 {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/*Hello hyperlink attributes*/
+a[target] {
+
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+/* 1st Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* 2nd Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+
+    .scroll-bar {
+        height: auto;
+        width: auto;
+        border: px solid gray;
+        overflow-y: scroll;
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+}
